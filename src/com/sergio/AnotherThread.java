@@ -10,7 +10,7 @@ public class AnotherThread extends Thread{
 			Thread.sleep(3000);
 		} catch(InterruptedException e){
 			System.out.println("Another thread woke me up");
-			e.printStackTrace();
+			return;
 		}
 		
 		System.out.println("Three seconds have passed and I'm awake!");
